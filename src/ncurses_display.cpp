@@ -60,7 +60,7 @@ void NCursesDisplay::DisplayProcesses(std::vector<Process>& processes,
   int const cpu_column{20};
   int const ram_column{30};
   int const time_column{39};
-  int const command_column{55};
+  int const command_column{48};
   wattron(window, COLOR_PAIR(2));
   mvwprintw(window, ++row, pid_column, "PID");
   mvwprintw(window, row, user_column, "USER");

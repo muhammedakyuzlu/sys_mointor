@@ -18,7 +18,7 @@ int& Process::Pid() { return _pid; }
 float Process::CpuUtilization() { return _cpuUtilization; }
 
 // DONE: Return the command that generated this process
-string Process::Command() { return _command; }
+string Process::Command() { return _command.substr(0,30); }
 
 // DONE: Return this process's memory utilization
 string Process::Ram() { return _ram; }
@@ -32,8 +32,5 @@ long Process::UpTime() { return _upTime; }
 // DONE: Overload the "less than" comparison operator for Process objects
 // REMOVE: [[maybe_unused]] once you define the function
 bool Process::operator<(Process const& a) const {
-  if (_cpuUtilization > a._cpuUtilization)
-    return true;
-  else
-    return false;
+  return _cpuUtilization > a._cpuUtilization;
 }

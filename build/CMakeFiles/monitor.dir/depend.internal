@@ -6,7 +6,9 @@ CMakeFiles/monitor.dir/src/format.cpp.o
  /home/muhammed/Documents/nd/sys_monitor/CppND-System-Monitor/src/format.cpp
 CMakeFiles/monitor.dir/src/linux_parser.cpp.o
  ../include/linux_parser.h
+ ../include/process.h
  ../include/processor.h
+ ../include/system.h
  /home/muhammed/Documents/nd/sys_monitor/CppND-System-Monitor/src/linux_parser.cpp
 CMakeFiles/monitor.dir/src/main.cpp.o
  ../include/ncurses_display.h

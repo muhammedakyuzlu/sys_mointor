@@ -5,7 +5,9 @@ CMakeFiles/monitor.dir/src/format.cpp.o: ../include/format.h
 CMakeFiles/monitor.dir/src/format.cpp.o: ../src/format.cpp
 
 CMakeFiles/monitor.dir/src/linux_parser.cpp.o: ../include/linux_parser.h
+CMakeFiles/monitor.dir/src/linux_parser.cpp.o: ../include/process.h
 CMakeFiles/monitor.dir/src/linux_parser.cpp.o: ../include/processor.h
+CMakeFiles/monitor.dir/src/linux_parser.cpp.o: ../include/system.h
 CMakeFiles/monitor.dir/src/linux_parser.cpp.o: ../src/linux_parser.cpp
 
 CMakeFiles/monitor.dir/src/main.cpp.o: ../include/ncurses_display.h

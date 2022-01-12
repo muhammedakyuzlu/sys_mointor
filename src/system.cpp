@@ -10,10 +10,7 @@
 #include "process.h"
 #include "processor.h"
 #include <iostream>
-using std::set;
-using std::size_t;
-using std::string;
-using std::vector;
+using namespace std;
 
 /*You need to complete the mentioned TODOs in order to satisfy the rubric
 criteria "The student will be able to extract and display basic data about the
@@ -30,7 +27,7 @@ vector<Process>& System::Processes() {
   processes_={};
 
   vector<int> pids = LinuxParser::Pids();
-  for (int i=0;i<pids.size();i++) {
+  for (int i=0;(unsigned)i<pids.size();i++) {
     Process tem;
     tem._pid = pids[i];
     tem._user = LinuxParser::User(pids[i]);
