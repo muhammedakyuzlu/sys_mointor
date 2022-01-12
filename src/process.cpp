@@ -27,9 +27,9 @@ string Process::Ram() { return _ram; }
 string Process::User() { return _user; }
 
 // DONE: Return the age of this process (in seconds)
-long int Process::UpTime() { return _upTime; }
+long Process::UpTime() { return _upTime; }
 
-// TODO: Overload the "less than" comparison operator for Process objects
+// DONE: Overload the "less than" comparison operator for Process objects
 // REMOVE: [[maybe_unused]] once you define the function
 bool Process::operator<(Process const& a) const {
   if (_cpuUtilization > a._cpuUtilization)

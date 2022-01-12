@@ -1,5 +1,5 @@
 #include "system.h"
-
+#include "format.h"
 #include <unistd.h>
 
 #include <array>
@@ -35,7 +35,7 @@ vector<Process>& System::Processes() {
     tem._pid = pids[i];
     tem._user = LinuxParser::User(pids[i]);
     tem._command =LinuxParser::Command(pids[i]);
-   tem._cpuUtilization = LinuxParser::CpuUtilization(pids[i]);
+    tem._cpuUtilization = LinuxParser::CpuUtilization(pids[i]);
     tem._ram = LinuxParser::Ram(pids[i]);
     tem._upTime = LinuxParser::UpTime(pids[i]);
     processes_.push_back(tem);

@@ -60,7 +60,7 @@ void NCursesDisplay::DisplayProcesses(std::vector<Process>& processes,
   int const cpu_column{20};
   int const ram_column{30};
   int const time_column{39};
-  int const command_column{50};
+  int const command_column{55};
   wattron(window, COLOR_PAIR(2));
   mvwprintw(window, ++row, pid_column, "PID");
   mvwprintw(window, row, user_column, "USER");
@@ -106,6 +106,8 @@ void NCursesDisplay::Display(System& system, int n) {
     wrefresh(system_window);
     wrefresh(process_window);
     refresh();
+    werase(system_window);
+    werase(process_window);
     std::this_thread::sleep_for(std::chrono::seconds(1));
   }
   endwin();
