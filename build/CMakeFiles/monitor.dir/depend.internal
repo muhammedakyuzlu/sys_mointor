@@ -29,6 +29,7 @@ CMakeFiles/monitor.dir/src/processor.cpp.o
  ../include/processor.h
  /home/muhammed/Documents/nd/sys_monitor/CppND-System-Monitor/src/processor.cpp
 CMakeFiles/monitor.dir/src/system.cpp.o
+ ../include/format.h
  ../include/linux_parser.h
  ../include/process.h
  ../include/processor.h
